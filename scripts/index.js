@@ -13,28 +13,30 @@ const getCardContents = (arr) => {
     html += `
     <div class="card card--projects">
       <div class="card-left">
-        <h3>${project.name}</h3>
-        <p>${project.description}</p>
-        <div class="tags">
-          <ul class="flex tags-ul">
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Firebase</li>
-          </ul>
+        <div class="card-inner">
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+          <div class="tags">
+            <ul class="flex tags-ul">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Firebase</li>
+            </ul>
+          </div>
+          <a
+            href="${project.link}"
+            class="btn btn--primary"
+            target="_blank"
+            >View Project</a
+          >
+          <a
+            href="${project.github}"
+            class="btn btn--alt"
+            target="_blank"
+            >View GitHub</a
+          >
         </div>
-        <a
-          href="${project.link}"
-          class="btn btn--primary"
-          target="_blank"
-          >View Project</a
-        >
-        <a
-          href="${project.github}"
-          class="btn btn--alt"
-          target="_blank"
-          >View GitHub</a
-        >
       </div>
       <div class="card-right">
         <img
