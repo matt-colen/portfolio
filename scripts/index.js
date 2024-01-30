@@ -57,7 +57,9 @@ const renderProjects = (html) => {
 getCardContents(projects);
 
 const renderCopyright = () => {
-  document.querySelector('#copyright').innerHTML = `<p>&copy ${new Date().getFullYear()} Matt Colen. All Rights Reserved `
-}
+  document.querySelector(
+    "#copyright"
+  ).innerHTML = `<p>&copy ${new Date().getFullYear()} Matt Colen. All Rights Reserved `;
+};
 
-renderCopyright()
+renderCopyright();
