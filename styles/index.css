@@ -170,6 +170,7 @@ i {
   width: 75vw;
   background: var(--clr-dark);
   text-align: center;
+  z-index: 999;
 }
 
 .nav-ham-menu li:first-child {
