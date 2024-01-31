@@ -1,8 +1,8 @@
 import projects from "./projects.js";
 
 document.body.addEventListener("click", (e) => {
-  if (e.target.id === "ham-btn" || e.target.id === "mobile-nav-close-btn") {
-    document.querySelector("#nav-ham-menu").classList.toggle("hidden");
+  if (e.target.id === "ham-btn" || e.target.id === "nav-drawer-close-btn") {
+    document.querySelector("#nav-drawer").classList.toggle("hidden");
   }
 });
 
@@ -53,7 +53,7 @@ const getCardContents = (arr) => {
 };
 
 const renderProjects = (html) => {
-  document.querySelector("#projects-list").innerHTML = html;
+  document.querySelector("#projects__list").innerHTML = html;
 };
 
 getCardContents(projects);

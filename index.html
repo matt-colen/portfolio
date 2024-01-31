@@ -28,17 +28,18 @@
     <header>
       <nav>
         <div class="container--wide">
-          <!-- Desktop Nav UL -->
-          <ul id="nav-ul--desktop" class="flex nav-ul nav-ul--desktop">
+          <!-- Desktop Nav -->
+          <ul id="nav--desktop" class="flex nav nav--desktop">
             <li class="align-left"><a href="index.html">Matt Colen</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="pages/about.html">About</a></li>
             <li>
               <a
                 href="https://www.linkedin.com/in/matthew-colen-061650209/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
             </li>
             <li>
               <a href="https://github.com/matt-colen" target="_blank"
@@ -46,24 +47,26 @@
               ></a>
             </li>
           </ul>
-          <!-- Mobile Nav UL -->
-          <ul id="nav-ul--mobile" class="flex nav-ul nav-ul--mobile hidden">
+
+          <!-- Mobile Nav -->
+          <ul id="nav--mobile" class="flex nav nav--mobile hidden">
             <li><a href="index.html">Matt Colen</a></li>
             <li>
-              <button id="ham-btn" class="ham-btn hidden icon-btn">
+              <button id="ham-btn" class="ham-btn icon-btn hidden">
                 <i class="fa-solid fa-bars"></i>
               </button>
             </li>
           </ul>
 
-          <ul id="nav-ham-menu" class="flex flex-column nav-ham-menu hidden">
+          <!-- Nav Drawer  -->
+          <ul id="nav-drawer" class="flex flex-column nav-drawer hidden">
             <li>
-              <button id="mobile-nav-close-btn" class="icon-btn">
+              <button id="nav-drawer-close-btn" class="icon-btn">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="pages/about.html">About</a></li>
             <li>
               <a
                 href="https://www.linkedin.com/in/matthew-colen-061650209/"
@@ -84,13 +87,11 @@
         <div class="container">
           <div class="card card--hero">
             <div class="card-left">
-              <h1>Hi, I'm Matt Colen</h1>
+              <h1>Hi, I'm Matt Colen 👋</h1>
               <p class="tagline">A front-end web developer based in Missouri</p>
               <a href="#projects" class="btn btn--primary">My Projects</a>
             </div>
-            <div class="card-right">
-              <img src="assets/images/hero.svg" alt="">
-            </div>
+            <div class="card-right"></div>
           </div>
         </div>
       </section>
@@ -100,14 +101,17 @@
       <div class="container container--narrow">
         <section id="projects" class="projects">
           <h2>Projects</h2>
-          <div id="projects-list" class="projects-list flex flex-column"></div>
+          <div
+            id="projects__list"
+            class="projects__list flex flex-column"
+          ></div>
         </section>
       </div>
     </main>
 
     <footer>
       <div class="container--wide container--footer flex flex-column">
-        <ul class="social-links flex">
+        <ul class="social__list flex">
           <li class="flex">
             <a
               href="https://www.linkedin.com/in/matthew-colen-061650209/"
