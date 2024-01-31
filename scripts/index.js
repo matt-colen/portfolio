@@ -24,18 +24,20 @@ const getCardContents = (arr) => {
               <li class="tag">Firebase</li>
             </ul>
           </div>
-          <a
-            href="${project.link}"
-            class="btn btn--primary"
-            target="_blank"
-            >View Project</a
-          >
-          <a
-            href="${project.github}"
-            class="btn btn--alt"
-            target="_blank"
-            >View GitHub</a
-          >
+          <div class="project-links__container flex">
+            <a
+              href="${project.link}"
+              class="btn btn--primary"
+              target="_blank"
+              >View Project</a
+            >
+            <a
+              href="${project.github}"
+              class="btn btn--alt"
+              target="_blank"
+              >View GitHub</a
+            >
+          </div>
         </div>
       </div>
       <div class="card-right">
