@@ -253,6 +253,9 @@ i {
 }
 
 @media only screen and (max-width: 500px) {
+  .card {
+    text-align: center;
+  }
   .nav--desktop {
     display: none;
   }
@@ -266,6 +269,17 @@ i {
     width: 100%;
     text-align: center;
   }
+  .tags-ul {
+    justify-content: center;
+  }
+  .project-links__container {
+    flex-flow: column;
+    gap: 0;
+    margin-top: var(--spacing-m);
+  }
+  .btn {
+    margin-top: var(--spacing-m);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -278,7 +292,7 @@ i {
     width: 100%;
   }
   .card--hero {
-    padding: var(--spacing-xl) var(--spacing-m);
+    padding: var(--spacing-xxl) var(--spacing-m);
   }
 }
 
