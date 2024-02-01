@@ -9,10 +9,14 @@ document.body.addEventListener("click", (e) => {
 const getCardContents = (arr) => {
   let html = "";
 
-  arr.forEach((project) => {
+  arr.forEach((project, i) => {
+    const side = i % 2 === 0 ? "right" : "left";
+    const oppositeSide = side === "right" ? "left" : "right";
+    const flipped = i % 2 === 0 ? "card" : "card card--flipped";
+
     html += `
-    <div class="card card--projects">
-      <div class="card-left">
+    <div class="${flipped} card--projects">
+      <div class="card-${oppositeSide} flex">
         <div class="card-inner">
           <h3>${project.name}</h3>
           <p>${project.description}</p>
@@ -40,7 +44,7 @@ const getCardContents = (arr) => {
           </div>
         </div>
       </div>
-      <div class="card-right">
+      <div class="card-${side}">
         <img
           class="project-img"
           src="${project.thumbnail}"

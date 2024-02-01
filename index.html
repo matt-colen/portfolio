@@ -102,44 +102,42 @@
     </header>
 
     <main>
-      <div class="container container--narrow">
-        <section id="projects" class="projects">
+      <section id="projects" class="projects">
+        <div class="container container--narrow">
           <h2>Projects</h2>
           <div
             id="projects__list"
             class="projects__list flex flex-column"
           ></div>
-        </section>
-        <section id="contact">
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container container--xs">
           <h2>Contact</h2>
-          <div class="container container--xs">
-            <form class="form" name="contact" netlify>
-              <p>
-                <label>Name <input type="text" name="name" required /></label>
-              </p>
-              <p>
-                <label
-                  >Email <input type="email" name="email" required
-                /></label>
-              </p>
-              <p>
-                <label
-                  >Message
-                  <textarea
-                    name="message"
-                    cols="30"
-                    rows="10"
-                    required
-                  ></textarea>
-                </label>
-              </p>
-              <p>
-                <button class="btn btn--primary" type="submit">Send</button>
-              </p>
-            </form>
-          </div>
-        </section>
-      </div>
+          <form class="form" name="contact" netlify>
+            <p>
+              <label>Name <input type="text" name="name" required /></label>
+            </p>
+            <p>
+              <label>Email <input type="email" name="email" required /></label>
+            </p>
+            <p>
+              <label
+                >Message
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </label>
+            </p>
+            <p>
+              <button class="btn btn--primary" type="submit">Send</button>
+            </p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
