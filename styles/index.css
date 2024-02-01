@@ -1,9 +1,9 @@
 :root {
-  --clr-cta: hsl(148, 56%, 82%);
+  --clr-cta: #b7ebcf;
   --clr-cta-hover: hsl(148, 61%, 77%);
   --clr-gray: hsl(276, 10%, 90%);
-  --clr-primary: hsl(274, 33%, 92%);
-  --clr-dark: hsl(0, 0%, 27%);
+  --clr-primary: #ebe4f1;
+  --clr-dark: #454545;
   --clr-light: hsl(234, 6%, 95%);
   --font-primary: "Roboto", sans-serif;
   --font-headers: "Archivo Black", sans-serif;
@@ -154,6 +154,10 @@ i {
   max-width: 1300px;
 }
 
+.container--xs {
+  max-width: 500px;
+}
+
 /* Nav  */
 .nav {
   gap: var(--spacing-l);
@@ -238,6 +242,29 @@ i {
 
 .project-links__container {
   gap: var(--spacing-m);
+}
+
+/* Contact  */
+.form input,
+.form button,
+.form textarea {
+  font-size: var(--font-s);
+  font-family: var(--font-primary);
+}
+
+.form input,
+.form textarea {
+  padding: var(--spacing-m) var(--spacing-s);
+  border: 1px solid var(--clr-gray);
+  border-radius: var(--radius-soft);
+  resize: none;
+  
+}
+
+.form label,
+.form input,
+.form textarea {
+  width: 100%;
 }
 
 /* Footer */
