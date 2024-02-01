@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: var(--spacing-l) 0;
+  margin: 0 0 var(--spacing-xl) 0;
 }
 
 p {
@@ -227,15 +227,19 @@ i {
   margin: 0 auto;
 }
 
+.card-right--hero {
+  position: relative;
+}
+
 /* Projects Section  */
 .projects {
   background: var(--clr-darkest);
   color: var(--clr-light);
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xxl) 0;
 }
 
 .projects__list {
-  gap: var(--spacing-xxl);
+  gap: var(--spacing-xl);
 }
 
 .tags-ul {
@@ -250,7 +254,7 @@ i {
 }
 
 .project-img {
-  height: 400px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: var(--radius-soft);
@@ -275,6 +279,10 @@ input,
 textarea {
   font-size: var(--font-s);
   font-family: var(--font-primary);
+}
+
+.form {
+  width: 100%;
 }
 
 .form input,
@@ -304,8 +312,12 @@ textarea {
 }
 
 @media only screen and (max-width: 500px) {
-  .form {
-    text-align: left;
+  .card-inner {
+    width: 100%;
+    margin: var(--spacing-m) 0;
+  }
+  .card--projects {
+    flex-direction: row-reverse;
   }
   .nav--desktop {
     display: none;
@@ -320,14 +332,6 @@ textarea {
     width: 100%;
     text-align: center;
   }
-  .tags-ul {
-    justify-content: center;
-  }
-  .project-links__container {
-    flex-flow: column;
-    gap: 0;
-    margin-top: var(--spacing-m);
-  }
   .btn {
     margin-top: var(--spacing-m);
   }
@@ -335,8 +339,8 @@ textarea {
 
 @media only screen and (max-width: 1000px) {
   .card {
-    flex-flow: column;
-    gap: var(--spacing-l);
+    flex-flow: column-reverse;
+    gap: var(--spacing-m);
     padding: var(--spacing-m);
     text-align: center;
   }
@@ -347,8 +351,17 @@ textarea {
   .card--hero {
     padding: var(--spacing-xxl) var(--spacing-m);
   }
+  .project-links__container {
+    flex-flow: column;
+    gap: 0;
+    margin-top: var(--spacing-m);
+  }
+  .tags-ul {
+    justify-content: center;
+  }
   .form {
     padding: var(--spacing-m);
+    text-align: left;
   }
 }
 

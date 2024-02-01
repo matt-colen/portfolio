@@ -13,6 +13,9 @@ const getCardContents = (arr) => {
     const side = i % 2 === 0 ? "right" : "left";
     const oppositeSide = side === "right" ? "left" : "right";
     const flipped = i % 2 === 0 ? "card" : "card card--flipped";
+    const tagsHTML = project.tags.map((tag) => {
+      return `<li class="tag">${tag}</li>`;
+    });
 
     html += `
     <div class="${flipped} card--projects">
@@ -22,10 +25,7 @@ const getCardContents = (arr) => {
           <p>${project.description}</p>
           <div class="tags">
             <ul class="flex tags-ul">
-              <li class="tag">HTML</li>
-              <li class="tag">CSS</li>
-              <li class="tag">JS</li>
-              <li class="tag">Firebase</li>
+              ${tagsHTML.join("")}
             </ul>
           </div>
           <div class="project-links__container flex">
