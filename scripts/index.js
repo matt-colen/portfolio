@@ -20,7 +20,7 @@ const getCardContents = (arr) => {
     html += `
     <div class="${flipped} card--projects">
       <div class="card-${oppositeSide} flex">
-        <div class="card-inner">
+        <div class="card-inner content">
           <h3>${project.name}</h3>
           <p>${project.description}</p>
           <div class="tags">

@@ -20,7 +20,7 @@
   --spacing-l: 32px;
   --spacing-xl: 64px;
   --spacing-xxl: 128px;
-  --radius-soft: 5px;
+  --radius-soft: 3px;
   --radius-circle: 50%;
   --transition-quick: all 0.2s;
   --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -34,8 +34,8 @@
 }
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-darkest);
+  color: var(--clr-light);
   font-family: var(--font-primary);
   font-size: var(--font-s);
 }
@@ -56,17 +56,17 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-l);
+  font-size: var(--font-xl);
+  line-height: 1.2;
 }
 
 h2 {
   text-align: center;
-  margin: 0 0 var(--spacing-xl) 0;
+  padding: var(--spacing-m);
 }
 
 p {
   line-height: 1.5;
-  margin: var(--spacing-m) 0;
 }
 
 /* Buttons & Icons  */
@@ -75,10 +75,11 @@ button {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition-quick);
-  color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
-a:hover {
+a:hover,
+button:hover {
   text-decoration: underline;
 }
 
@@ -89,22 +90,19 @@ button {
 
 .btn {
   display: inline-block;
+  border-radius: var(--radius-soft);
   margin-top: var(--spacing-l);
   padding: var(--spacing-s) var(--spacing-l);
-  border-radius: var(--radius-soft);
   font-weight: bold;
 }
 
 .btn--primary {
   background: var(--clr-cta);
+  color: var(--clr-dark);
 }
 
 .btn--primary:hover {
   background: var(--clr-cta-hover);
-}
-
-.btn--alt {
-  color: var(--clr-light);
 }
 
 .btn--alt:hover {
@@ -112,13 +110,13 @@ button {
   color: var(--clr-dark);
 }
 
+.icon-btn {
+  padding: var(--spacing-m);
+}
+
 i {
   pointer-events: none;
   font-size: 22px;
-}
-
-.icon-btn {
-  padding: var(--spacing-m);
 }
 
 .fa-bars {
@@ -140,23 +138,26 @@ i {
   flex-flow: column;
 }
 
+.content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: var(--spacing-s);
+}
+
 .hidden {
   display: none;
 }
 
 /* Containers */
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-m);
+  padding: 0 var(--spacing-m);
 }
 
 .container--wide {
   padding: var(--spacing-m) var(--spacing-xl);
-}
-
-.container--narrow {
-  max-width: 1200px;
 }
 
 .container--xs {
@@ -197,7 +198,6 @@ i {
 
 .nav-drawer a {
   display: inline-block;
-  color: var(--clr-light);
   padding: var(--spacing-m);
   width: 100%;
 }
@@ -218,28 +218,17 @@ i {
 }
 
 .card--hero {
-  padding: var(--spacing-xxl) var(--spacing-xl);
-  background: #fff;
-  box-shadow: var(--shadow);
+  border: none;
+  padding: var(--spacing-xxl) var(--spacing-m);
 }
 
 .card-inner {
   margin: 0 auto;
 }
 
-.card-right--hero {
-  position: relative;
-}
-
 /* Projects Section  */
-.projects {
-  background: var(--clr-darkest);
-  color: var(--clr-light);
-  padding: var(--spacing-xxl) 0;
-}
-
 .projects__list {
-  gap: var(--spacing-xl);
+  gap: var(--spacing-l);
 }
 
 .tags-ul {
@@ -283,6 +272,7 @@ textarea {
 
 .form {
   width: 100%;
+  gap: var(--spacing-s);
 }
 
 .form input,
@@ -300,6 +290,10 @@ textarea {
 }
 
 /* Footer */
+.container--footer {
+  gap: var(--spacing-m);
+}
+
 .social__list,
 .social__list li {
   justify-content: center;
@@ -312,13 +306,6 @@ textarea {
 }
 
 @media only screen and (max-width: 500px) {
-  .card-inner {
-    width: 100%;
-    margin: var(--spacing-m) 0;
-  }
-  .card--projects {
-    flex-direction: row-reverse;
-  }
   .nav--desktop {
     display: none;
   }
@@ -328,12 +315,15 @@ textarea {
   .ham-btn {
     display: block;
   }
+  .card-inner {
+    width: 100%;
+  }
   .btn {
     width: 100%;
     text-align: center;
   }
-  .btn {
-    margin-top: var(--spacing-m);
+  .content {
+    align-items: stretch;
   }
 }
 
@@ -341,26 +331,20 @@ textarea {
   .card {
     flex-flow: column-reverse;
     gap: var(--spacing-m);
-    padding: var(--spacing-m);
     text-align: center;
   }
   .card-left,
   .card-right {
     width: 100%;
   }
-  .card--hero {
-    padding: var(--spacing-xxl) var(--spacing-m);
-  }
   .project-links__container {
     flex-flow: column;
     gap: 0;
-    margin-top: var(--spacing-m);
   }
   .tags-ul {
     justify-content: center;
   }
   .form {
-    padding: var(--spacing-m);
     text-align: left;
   }
 }
