@@ -1,0 +1,44 @@
+.card--about {
+  background: linear-gradient(45deg, var(--clr-cta), var(--clr-cta-hover));
+  border-radius: var(--radius-circle);
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: var(--spacing-l) auto;
+}
+
+.about-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main ul {
+  list-style-type: disc;
+  padding-left: var(--font-s);
+}
+
+main li {
+  margin: var(--spacing-s) 0;
+}
+
+section {
+  margin: var(--spacing-xl) 0;
+}
+
+h2 {
+  text-align: left;
+  padding: var(--spacing-m) 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .card--about {
+    height: 300px;
+    width: 300px;
+  }
+}

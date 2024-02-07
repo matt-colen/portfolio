@@ -4,6 +4,224 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matt Colen | About</title>
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles  -->
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <!-- Scripts  -->
+    <script src="../scripts/index.js" type="module" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="container--wide">
+          <!-- Desktop Nav -->
+          <ul id="nav--desktop" class="flex nav nav--desktop">
+            <li class="align-left"><a href="../index.html">Matt Colen</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/matthew-colen-061650209/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/matt-colen" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+
+          <!-- Mobile Nav -->
+          <ul id="nav--mobile" class="flex nav nav--mobile hidden">
+            <li><a href="../index.html">Matt Colen</a></li>
+            <li>
+              <button id="ham-btn" class="ham-btn icon-btn hidden">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+
+          <!-- Nav Drawer  -->
+          <ul id="nav-drawer" class="flex flex-column nav-drawer hidden">
+            <li>
+              <button id="nav-drawer-close-btn" class="icon-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/matthew-colen-061650209/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/matt-colen" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="card--about flex">
+            <img
+              class="about-img"
+              src="../assets/images/matt-colen.png"
+              alt="Matt Colen smiling"
+            />
+          </div>
+          <section id="about">
+            <h2>About Me</h2>
+            <p>
+              Hi I'm Matt Colen, a passionate front-end web developer with a
+              background in Operational Excellence (OpEx) and project
+              management. I have a Bachelor's in Psychology and a Master's in
+              Business Administration which has helped me build up solid
+              analytical thinking, creativity, and business skills.
+            </p>
+          </section>
+          <section id="my-journey">
+            <h2>My Journey</h2>
+            <p>
+              My journey into web development began during my time in
+              operational excellence management, where I discovered my passion
+              for creating intuitive and visually appealing user interfaces.
+              Since then, I've immersed myself in the world of front-end
+              development, honing my skills in HTML, CSS, and JavaScript to
+              bring ideas to life on the web.
+            </p>
+          </section>
+          <section id="tech-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+              <li>
+                <p>
+                  <strong>HTML/CSS/JavaScript</strong>: Proficient in building
+                  responsive and accessible web interfaces, ensuring a seamless
+                  user experience across devices.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>UX/UI Design/Figma</strong>: Solid understanding of
+                  user-centered design principles, wireframing, prototyping, and
+                  usability testing to create engaging and intuitive interfaces.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Version Control</strong>: Experience with Git for
+                  efficient collaboration and version control in team projects.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="professional-experience">
+            <h2>Professional Experience</h2>
+            <ul>
+              <li>
+                <p>
+                  <strong>Operational Excellence Manager</strong>: Leveraged my
+                  analytical skills and attention to detail to optimize business
+                  processes, streamline workflows, and drive continuous
+                  improvement initiatives.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Project Management</strong>: Led cross-functional
+                  teams, managed project timelines, and ensured successful
+                  project delivery within scope and budget constraints.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Customer-Centric Approach</strong>: Developed a deep
+                  understanding of user behavior and preferences through my
+                  background in psychology, translating insights into
+                  user-friendly web experiences.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container container--xs">
+          <h2>Get in Touch</h2>
+          <div class="card">
+            <form class="form flex flex-column" name="contact" netlify>
+              <p>
+                <label>Name <input type="text" name="name" required /></label>
+              </p>
+              <p>
+                <label
+                  >Email <input type="email" name="email" required
+                /></label>
+              </p>
+              <p>
+                <label
+                  >Message
+                  <textarea
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </label>
+              </p>
+              <p>
+                <button class="btn btn--primary" type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container--wide container--footer flex flex-column">
+        <ul class="social__list flex">
+          <li class="flex">
+            <a
+              href="https://www.linkedin.com/in/matthew-colen-061650209/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="flex">
+            <a href="https://github.com/matt-colen" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+        <p id="copyright" class="copyright"></p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -9,7 +9,7 @@
   --font-primary: "Roboto", sans-serif;
   --font-headers: "Archivo Black", sans-serif;
   --font-xs: 15px;
-  --font-s: 17px;
+  --font-s: 18px;
   --font-m: 20px;
   --font-l: 32px;
   --font-xl: 46px;
@@ -53,6 +53,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-headers);
+  text-align: center;
 }
 
 h1 {
@@ -61,12 +62,11 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   padding: var(--spacing-m);
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* Buttons & Icons  */
