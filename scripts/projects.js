@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: "Twimba",
+    name: "Twimba (In-Progress)",
     description: "A clone of the Twitter (X) app",
     tags: ["HTML", "CSS", "JavaScript", "Firebase"],
     thumbnail: "../assets/images/twimba.png",
