@@ -1,8 +1,8 @@
 const projects = [
   {
-    name: "Twimba (In-Progress)",
+    name: "Twimba",
     description: "A clone of the Twitter (X) app",
-    tags: ["HTML", "CSS", "JavaScript", "Firebase"],
+    tags: ["HTML", "CSS", "JavaScript", "Firebase Database", "Firebase Auth"],
     thumbnail: "../assets/images/twimba.png",
     link: "https://twimba-mc.netlify.app/",
     github: "https://github.com/matt-colen/twimba",
@@ -18,7 +18,7 @@ const projects = [
   {
     name: "We Are The Champions",
     description: "A website for teams to share messages",
-    tags: ["HTML", "CSS", "JavaScript", "Firebase"],
+    tags: ["HTML", "CSS", "JavaScript", "Firebase Database"],
     thumbnail: "../assets/images/we-are-the-champions.png",
     link: "https://we-are-the-champions-mc.netlify.app/",
     github: "https://github.com/matt-colen/we-are-the-champions",
