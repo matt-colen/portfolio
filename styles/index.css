@@ -309,6 +309,7 @@ i {
 
 .tags-ul {
   gap: var(--spacing-s);
+  flex-wrap: wrap;
 }
 
 .tag {
