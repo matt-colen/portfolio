@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  padding: var(--spacing-m);
+  padding: var(--spacing-m) 0 var(--spacing-xl);
 }
 
 p {
@@ -315,7 +315,7 @@ i {
 
 /* Projects Section  */
 .projects__list {
-  gap: var(--spacing-l);
+  gap: var(--spacing-xl);
 }
 
 .tags-ul {

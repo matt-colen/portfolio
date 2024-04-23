@@ -1,19 +1,19 @@
 const projects = [
   {
+    name: "Color Scheme Generator",
+    description: "A color scheme tool using the Color API",
+    tags: ["HTML", "CSS", "JavaScript", "Color API"],
+    thumbnail: "../assets/images/color-scheme-generator.png",
+    link: "https://color-scheme-generator-mc.netlify.app/",
+    github: "https://github.com/matt-colen/color-scheme-generator",
+  },
+  {
     name: "Twimba",
     description: "A clone of the Twitter (X) app",
     tags: ["HTML", "CSS", "JavaScript", "Firebase Database", "Firebase Auth"],
     thumbnail: "../assets/images/twimba.png",
     link: "https://twimba-mc.netlify.app/",
     github: "https://github.com/matt-colen/twimba",
-  },
-  {
-    name: "Groovy Pups Spa",
-    description: "A website for a local dog bathing business",
-    tags: ["HTML", "CSS", "JavaScript"],
-    thumbnail: "../assets/images/groovy-pups-spa.png",
-    link: "https://groovy-pups-spa.netlify.app/",
-    github: "https://github.com/matt-colen/groovy-pups-spa",
   },
   {
     name: "We Are The Champions",
