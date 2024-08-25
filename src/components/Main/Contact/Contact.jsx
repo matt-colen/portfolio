@@ -7,10 +7,10 @@ export default function Contact() {
       <form
         className="form grid"
         name="contact"
-        method="POST"
-        data-netlify="true"
+        method="post"
+        
       >
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
             Name <input type="text" name="name" required />
