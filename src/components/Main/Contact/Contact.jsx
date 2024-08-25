@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2 className="section-header">Contact</h2>
-      <form className="form grid" name="contact" netlify>
+      <form className="form grid" name="contact" method="POST" netlify>
         <p>
           <label>
             Name <input type="text" name="name" required />
@@ -22,7 +22,9 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <button className="btn btn--primary">Send</button>
+          <button type="submit" className="btn btn--primary">
+            Send
+          </button>
         </p>
       </form>
     </section>
