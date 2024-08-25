@@ -1,12 +1,15 @@
 :root {
-  --font-primary: "Inter", sans-serif;
+  --font-primary: "Lato", sans-serif;
   --color-light: #ccc;
   --color-light-header: #eee;
-  --color-dark: #1c1c1c;
+  --color-dark: hsl(0, 0%, 9%);
   --color-cta: hsl(48, 88%, 67%);
   --color-cta-hover: hsl(48, 93%, 63%);
-  --color-input: hsl(219, 41%, 93%);
+  --color-cta-secondary-hover: hsl(272, 32%, 92%);
+  --radius: 2px;
 }
+
+/* General  */
 
 * {
   box-sizing: border-box;
@@ -17,6 +20,8 @@ h1,
 h2,
 h3 {
   color: var(--color-light-header);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 body {
@@ -37,8 +42,9 @@ a {
 }
 
 a,
-button {
-  transition: all 0.2s;
+button,
+i {
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -56,18 +62,26 @@ p {
   display: grid;
 }
 
+/* Layout */
+
 .outer-container {
   padding: 0 5%;
 }
 
+.section-header {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-bottom: 3em;
+}
+
+/* Buttons and Icons */
+
 .btn {
-  display: inline-block;
   background: none;
-  border-radius: 4px;
-  text-decoration: none;
+  border-radius: var(--radius);
   border: none;
-  font-weight: bold;
-  min-width: 100px;
+  font-weight: 700;
 }
 
 .btn--primary {
@@ -86,7 +100,7 @@ p {
 
 .btn--secondary:hover {
   color: var(--color-dark);
-  background: hsl(272, 32%, 92%);
+  background: var(--color-cta-secondary-hover);
 }
 
 .btn--primary,
@@ -94,15 +108,33 @@ p {
   display: block;
   padding: 0.5em 1em;
   text-align: center;
+  width: 100%;
+  min-width: 100px;
+}
+
+i {
+  font-size: 22px;
+}
+
+.nav-list--desktop a:hover,
+.nav-list--mobile a:hover,
+.nav-list--desktop i:hover,
+.nav-list--mobile i:hover {
+  color: var(--color-cta);
 }
 
 @media (min-width: 500px) {
   .btn--primary,
   .btn--secondary {
     display: inline-block;
+    justify-self: start;
+    width: unset;
   }
   .btn--primary {
-    margin-right: 0.5em;
+    margin-right: 1em;
+  }
+  .btn--secondary {
+    font-size: 0.8rem;
   }
 }
 

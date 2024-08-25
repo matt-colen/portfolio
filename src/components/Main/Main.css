@@ -1,10 +1,5 @@
 .main {
-  gap: 7em;
-}
-
-.section-header {
-  text-align: center;
-  font-size: 1.8rem;
+  gap: 10em;
 }
 
 .projects {

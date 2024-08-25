@@ -50,13 +50,10 @@ export default function Nav() {
       </ul>
       {/* Mobile Nav drawer  */}
       <ul className="nav-list nav-drawer" style={navDrawerStyle}>
-        <li>
+        <li className="close-btn">
           <button className="btn" onClick={handleClick}>
             <i className="fa-solid fa-xmark close-icon"></i>
           </button>
-        </li>
-        <li>
-          <a href="index.html">Matt Colen</a>
         </li>
         <li>
           <a href="index.html">Home</a>

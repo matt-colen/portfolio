@@ -13,7 +13,7 @@ export default function Main() {
     <main className="main grid">
       <section id="projects" className="projects grid">
         <h2 className="section-header grid">Projects</h2>
-        {projectElements}
+        <div className="projects-container grid">{projectElements}</div>
       </section>
       <Contact />
     </main>

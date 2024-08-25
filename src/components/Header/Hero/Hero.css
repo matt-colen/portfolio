@@ -1,11 +1,12 @@
 .hero {
   text-align: center;
-  padding: 10em 0;
-  justify-items: center;
-  gap: 1em;
+  flex-flow: column;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .title {
-  font-size: 2.7rem;
-  text-transform: uppercase;
+  font-size: 3rem;
 }
