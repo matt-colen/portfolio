@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+}
+
+.header-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #171717;
+  cursor: pointer;
+}
+
+@keyframes box-shadows {
+  0% {
+    border: 1px solid #171717;
+    box-shadow: none;
+  }
+  .01% {
+    border: 1px solid #a3a3a3;
+    box-shadow: 0 0 30000px var(--color-light);
+  }
+}

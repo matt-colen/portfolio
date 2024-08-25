@@ -11,3 +11,8 @@
 .title {
   font-size: 3rem;
 }
+
+.title,
+.sub-title {
+  text-shadow: 0 0 200px var(--color-dark);
+}

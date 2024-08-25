@@ -64,9 +64,9 @@ p {
 
 /* Layout */
 
-.outer-container {
+/* .outer-container {
   padding: 0 5%;
-}
+} */
 
 .section-header {
   text-align: center;
@@ -139,7 +139,7 @@ i {
 }
 
 @media (min-width: 700px) {
-  .outer-container {
+  /* .outer-container {
     padding: 0 10%;
-  }
+  } */
 }
