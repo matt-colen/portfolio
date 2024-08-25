@@ -1,10 +1,10 @@
 :root {
   --font-primary: "Inter", sans-serif;
-  --color-light: #eee;
-  --color-light-header: #fff;
-  --color-dark: #222;
-  --color-cta: hsl(148, 57%, 82%);
-  --color-cta-hover: hsl(148, 61%, 77%);
+  --color-light: #ccc;
+  --color-light-header: #eee;
+  --color-dark: #1c1c1c;
+  --color-cta: hsl(48, 88%, 67%);
+  --color-cta-hover: hsl(48, 93%, 63%);
   --color-input: hsl(219, 41%, 93%);
 }
 
@@ -21,7 +21,7 @@ h3 {
 
 body {
   color: var(--color-light);
-  background: linear-gradient(to top, #141e30, #243b55);
+  background: linear-gradient(to top, #181818, #131414);
   overflow-x: hidden;
 }
 
@@ -40,6 +40,10 @@ a,
 button {
   transition: all 0.2s;
   cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
 }
 
 /* Utility  */
@@ -63,12 +67,12 @@ button {
   text-decoration: none;
   border: none;
   font-weight: bold;
+  min-width: 100px;
 }
 
 .btn--primary {
   background: var(--color-cta);
   color: var(--color-dark);
-  margin-top: 2em;
 }
 
 .btn--primary:hover {
@@ -76,8 +80,8 @@ button {
 }
 
 .btn--secondary {
-  margin: 0.5em 0;
   color: var(--color-light);
+  text-decoration: underline;
 }
 
 .btn--secondary:hover {

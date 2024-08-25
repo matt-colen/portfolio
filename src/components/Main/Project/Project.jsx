@@ -10,9 +10,9 @@ export default function Project({
   github,
 }) {
   const tagElements = tags.map((tag) => (
-    <div key={nanoid()} className="tag">
+    <span key={nanoid()} className="tag">
       {tag}
-    </div>
+    </span>
   ));
 
   return (
@@ -20,7 +20,7 @@ export default function Project({
       <div className="project-card-data">
         <h3 className="project-name">{name}</h3>
         <p>{description}</p>
-        <p>{tagElements}</p>
+        <p className="tags flex">{tagElements}</p>
         <a className="btn btn--primary" href={link} target="_blank">
           View Project
         </a>

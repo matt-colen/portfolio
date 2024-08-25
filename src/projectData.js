@@ -1,31 +1,31 @@
-import thumbnail1 from "./assets/images/color-scheme-generator.png";
-import thumbnail2 from "./assets/images/twimba.png";
-import thumbnail3 from "./assets/images/we-are-the-champions.png";
+import thumbnail1 from "./assets/images/quiz-up.png";
+import thumbnail2 from "./assets/images/movie-watchlist.png";
+import thumbnail3 from "./assets/images/twimba.png";
 
 const projects = [
   {
-    name: "Color Scheme Generator",
-    description: "A color scheme tool using the Color API",
-    tags: ["HTML", "CSS", "JavaScript", "Color API"],
+    name: "Quiz Up",
+    description: "An app to test your skills on various topics",
+    tags: ["React", "API"],
     thumbnail: thumbnail1,
-    link: "https://color-scheme-generator-mc.netlify.app/",
-    github: "https://github.com/matt-colen/color-scheme-generator",
+    link: "https://quiz-up-mc.netlify.app/",
+    github: "https://github.com/matt-colen/quiz-up",
+  },
+  {
+    name: "Movie Watchlist",
+    description: "An app to search for movies and create a watchlist",
+    tags: ["JS", "API", "Netlify Serverless Functions"],
+    thumbnail: thumbnail2,
+    link: "https://movie-watchlist-mc.netlify.app",
+    github: "https://github.com/matt-colen/we-are-the-champions",
   },
   {
     name: "Twimba",
     description: "A clone of the Twitter (X) app",
-    tags: ["HTML", "CSS", "JavaScript", "Firebase Database", "Firebase Auth"],
-    thumbnail: thumbnail2,
+    tags: ["JS", "Firebase Database", "Firebase Auth"],
+    thumbnail: thumbnail3,
     link: "https://twimba-mc.netlify.app/",
     github: "https://github.com/matt-colen/twimba",
-  },
-  {
-    name: "We Are The Champions",
-    description: "A website for teams to share messages",
-    tags: ["HTML", "CSS", "JavaScript", "Firebase Database"],
-    thumbnail: thumbnail3,
-    link: "https://we-are-the-champions-mc.netlify.app/",
-    github: "https://github.com/matt-colen/we-are-the-champions",
   },
 ];
 

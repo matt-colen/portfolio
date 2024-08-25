@@ -14,22 +14,33 @@
 }
 
 .project-name {
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
+}
+
+.tags {
+  gap: .5em;
+  align-items: center;
 }
 
 .tag {
-  display: inline-block;
   margin-top: 1.5em;
-  border: .5px solid var(--color-light);
-  padding: .5em;
-  font-size: .7rem;
+  border: 0.4px solid var(--color-light);
+  border-radius: 4px;
+  padding: 0.5em;
+  font-size: 0.7rem;
+}
+
+.project-card-data .btn {
+  margin-top: 3em;
 }
 
 .project-card-img {
   height: 30vh;
   width: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 4px;
+  opacity: .9;
 }
 
 @media (min-width: 700px) {

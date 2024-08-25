@@ -29,7 +29,7 @@ export default function Contact() {
         </p>
         <p>
           <button type="submit" className="btn btn--primary">
-            Send
+            Send Message
           </button>
         </p>
       </form>
