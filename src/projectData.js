@@ -17,7 +17,7 @@ const projects = [
     tags: ["JS", "API", "Netlify Serverless Functions"],
     thumbnail: thumbnail2,
     link: "https://movie-watchlist-mc.netlify.app",
-    github: "https://github.com/matt-colen/we-are-the-champions",
+    github: "https://github.com/matt-colen/movie-watchlist",
   },
   {
     name: "Twimba",

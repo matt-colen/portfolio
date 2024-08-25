@@ -13,8 +13,6 @@ export default function Nav() {
     document.body.style.overflow = navDrawerOpen ? "hidden" : "";
   }, [navDrawerOpen]);
 
-  console.log(navDrawerOpen);
-
   const navDrawerStyle = {
     display: navDrawerOpen ? "grid" : "none",
   };
