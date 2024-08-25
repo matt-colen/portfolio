@@ -1,0 +1,13 @@
+.main {
+  gap: 5em;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.projects {
+  max-width: 900px;
+  margin: 0 auto;
+}

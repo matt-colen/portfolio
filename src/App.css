@@ -1,1 +1,109 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+  --color-light: #eee;
+  --color-light-header: #fff;
+  --color-dark: #222;
+  --color-cta: hsl(148, 57%, 82%);
+  --color-cta-hover: hsl(148, 61%, 77%);
+  --color-input: hsl(219, 41%, 93%);
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-light-header);
+}
+
+body {
+  color: var(--color-light);
+  background: linear-gradient(to top, #141e30, #243b55);
+  overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+/* Utility  */
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.outer-container {
+  padding: 0 5%;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+}
+
+.btn--primary {
+  background: var(--color-cta);
+  color: var(--color-dark);
+  margin-top: 2em;
+}
+
+.btn--primary:hover {
+  background: var(--color-cta-hover);
+}
+
+.btn--secondary {
+  margin: 0.5em 0;
+  color: var(--color-light);
+}
+
+.btn--secondary:hover {
+  color: var(--color-dark);
+  background: hsl(272, 32%, 92%);
+}
+
+.btn--primary,
+.btn--secondary {
+  display: block;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .btn--primary,
+  .btn--secondary {
+    display: inline-block;
+  }
+  .btn--primary {
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 700px) {
+  .outer-container {
+    padding: 0 10%;
+  }
+}

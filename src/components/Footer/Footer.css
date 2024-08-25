@@ -1,0 +1,22 @@
+.footer {
+  padding: 3em 0;
+}
+
+.footer-list {
+  padding: 1em 0;
+  gap: 1em;
+  justify-content: center;
+}
+
+.footer-list li {
+  list-style: none;
+}
+
+.footer a {
+  color: var(--color-light);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}

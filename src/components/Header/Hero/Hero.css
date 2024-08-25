@@ -1,0 +1,11 @@
+.hero {
+  text-align: center;
+  padding: 10em 0;
+  justify-items: center;
+  gap: 1em;
+}
+
+.title {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}

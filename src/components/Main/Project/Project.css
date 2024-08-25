@@ -1,0 +1,43 @@
+.projects {
+  gap: 5em;
+}
+
+.project-card {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+  gap: 1em;
+}
+
+.project-card-data {
+  gap: 0.5em;
+}
+
+.project-name {
+  margin-bottom: .2em;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 1.5em;
+  border: .5px solid var(--color-light);
+  padding: .5em;
+  font-size: .7rem;
+}
+
+.project-card-img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    justify-content: unset;
+    gap: 5em;
+  }
+}
