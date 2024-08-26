@@ -27,7 +27,8 @@ h3 {
 
 body {
   color: var(--color-light);
-  background: linear-gradient(to top, #181818, #131414);
+  background: var(--color-dark);
+  width: 100%;
 }
 
 body,
@@ -132,9 +133,6 @@ i {
   }
   .btn--primary {
     margin-right: 1em;
-  }
-  .btn--secondary {
-    font-size: 0.8rem;
   }
 }
 
