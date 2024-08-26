@@ -25,10 +25,12 @@ export default function Project({
           View Project
         </a>
         <a className="btn btn--secondary" href={github} target="_blank">
-          View GitHub
+          See Code
         </a>
       </div>
-      <img className="project-card-img" src={thumbnail} alt="" />
+      <div className="project-card-img-container">
+        <img className="project-card-img" src={thumbnail} alt="" />
+      </div>
     </div>
   );
 }

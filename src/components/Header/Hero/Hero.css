@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
   flex-flow: column;
-  height: 60vh;
+  height: 50vh;
   justify-content: center;
   align-items: center;
   gap: 0.5em;

@@ -29,7 +29,7 @@ export default function Header() {
       if (width > 1000) {
         boxes = 72;
       } else {
-        boxes = 36;
+        boxes = 54;
       }
       return boxes;
     });
