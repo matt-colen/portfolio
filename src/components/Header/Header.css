@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   z-index: -1;
 }
 

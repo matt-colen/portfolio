@@ -51,6 +51,7 @@
 .nav-drawer > li,
 .nav-drawer a {
   display: block;
+  font-size: 1.2rem;
 }
 
 .nav-drawer a,

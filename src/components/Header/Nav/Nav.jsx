@@ -54,32 +54,34 @@ export default function Nav() {
         </button>
       </ul>
       {/* Mobile Nav drawer  */}
-      <ul className="nav-list nav-drawer" style={navDrawerStyle}>
-        <li className="close-btn">
-          <button className="btn" onClick={handleClick}>
-            <i className="fa-solid fa-xmark close-icon"></i>
-          </button>
-        </li>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/matthew-colen-061650209/"
-            target="_blank"
-          >
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/matt-colen" target="_blank">
-            <i className="fa-brands fa-github"></i>
-          </a>
-        </li>
-      </ul>
+      {navDrawerOpen && (
+        <ul className="nav-list nav-drawer" style={navDrawerStyle}>
+          <li className="close-btn">
+            <button className="btn" onClick={handleClick}>
+              <i className="fa-solid fa-xmark close-icon"></i>
+            </button>
+          </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/matthew-colen-061650209/"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/matt-colen" target="_blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 }
