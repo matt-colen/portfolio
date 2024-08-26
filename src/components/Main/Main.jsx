@@ -10,7 +10,7 @@ export default function Main() {
   ));
 
   return (
-    <main className="main grid">
+    <main className="main grid outer-container">
       <section id="projects" className="projects grid">
         <h2 className="section-header grid">Projects</h2>
         <div className="projects-container grid">{projectElements}</div>

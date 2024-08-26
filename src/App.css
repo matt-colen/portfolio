@@ -1,8 +1,9 @@
 :root {
   --font-primary: "Lato", sans-serif;
-  --color-light: #ccc;
-  --color-light-header: #eee;
-  --color-dark: hsl(0, 0%, 9%);
+  --color-light: #eee;
+  --color-light-header: #fff;
+  --color-dark: hsl(300, 3%, 10%);
+  --color-dark-secondary: hsl(300, 3%, 20%);
   --color-cta: hsl(48, 88%, 67%);
   --color-cta-hover: hsl(48, 93%, 63%);
   --color-cta-secondary-hover: hsl(272, 32%, 92%);
@@ -64,9 +65,9 @@ p {
 
 /* Layout */
 
-/* .outer-container {
+.outer-container {
   padding: 0 5%;
-} */
+}
 
 .section-header {
   text-align: center;
@@ -139,7 +140,7 @@ i {
 }
 
 @media (min-width: 700px) {
-  /* .outer-container {
+  .outer-container {
     padding: 0 10%;
-  } */
+  }
 }

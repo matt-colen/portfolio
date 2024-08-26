@@ -1,16 +1,47 @@
 import Nav from "./Nav/Nav.jsx";
 import Hero from "./Hero/Hero.jsx";
 import { nanoid } from "nanoid";
+import { useState, useEffect } from "react";
 
 import "./Header.css";
-import { animation } from "terminal-kit/lib/spChars.js";
 
 export default function Header() {
-  const boxNumbers = [];
+  const [width, setWidth] = useState(window.innerWidth);
+  const [boxes, setBoxes] = useState(0);
+  const [boxNumbers, setBoxNumbers] = useState([]);
 
-  for (let i = 1; i < 73; i++) {
-    boxNumbers.push(i);
-  }
+  // Sets state of Window width
+  useEffect(() => {
+    const setWindowSize = () => {
+      window.addEventListener("resize", () => {
+        setWidth(window.innerWidth);
+      });
+    };
+
+    setWindowSize();
+
+    return () => window.removeEventListener("resize", setWindowSize);
+  }, []);
+
+  useEffect(() => {
+    setBoxes(() => {
+      let boxes;
+      if (width > 1000) {
+        boxes = 72;
+      } else {
+        boxes = 33;
+      }
+      return boxes;
+    });
+  }, [width]);
+
+  useEffect(() => {
+    const boxNumbers = [];
+    for (let i = 1; i < boxes; i++) {
+      boxNumbers.push(i);
+    }
+    setBoxNumbers(boxNumbers);
+  }, [boxes]);
 
   const boxElements = boxNumbers.map((num) => {
     const style = {
@@ -20,10 +51,8 @@ export default function Header() {
   });
 
   return (
-    <header className="header">
-      <div className="header-background">
-        {boxElements}
-      </div>
+    <header className="header outer-container">
+      <div className="header-background">{boxElements}</div>
       <Nav />
       <Hero />
     </header>
