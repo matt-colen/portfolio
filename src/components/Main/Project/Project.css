@@ -30,7 +30,7 @@
 }
 
 .tag {
-  border: 0.4px solid var(--color-light);
+  border: 1px solid var(--color-light);
   border-radius: var(--radius);
   padding: 0.5em 0.7em;
   font-size: 0.7rem;
