@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Nav.css";
 
 export default function Nav() {
@@ -7,11 +7,6 @@ export default function Nav() {
   const handleClick = () => {
     setNavDrawerOpen((prevNavDrawerOpen) => !prevNavDrawerOpen);
   };
-
-  // Locks vertical scrolling when the nav-drawer is open
-  useEffect(() => {
-    document.body.style.overflow = navDrawerOpen ? "hidden" : "";
-  }, [navDrawerOpen]);
 
   const navDrawerStyle = {
     display: navDrawerOpen ? "grid" : "none",
@@ -49,7 +44,7 @@ export default function Nav() {
         <li>
           <a href="index.html">Matt Colen</a>
         </li>
-        <button className="btn" onClick={handleClick}>
+        <button className="btn btn-ham" onClick={handleClick}>
           <i className="fa-solid fa-bars hamburger-icon"></i>
         </button>
       </ul>

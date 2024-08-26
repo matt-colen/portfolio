@@ -7,7 +7,7 @@
   --color-cta: hsl(48, 88%, 67%);
   --color-cta-hover: hsl(48, 93%, 63%);
   --color-cta-secondary-hover: hsl(272, 32%, 92%);
-  --radius: 2px;
+  --radius: 1px;
 }
 
 /* General  */
@@ -28,7 +28,6 @@ h3 {
 body {
   color: var(--color-light);
   background: linear-gradient(to top, #181818, #131414);
-  overflow-x: hidden;
 }
 
 body,

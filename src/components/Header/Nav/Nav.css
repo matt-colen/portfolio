@@ -30,9 +30,13 @@
   color: var(--color-light);
 }
 
+.btn-ham {
+  padding: 1em 0 1em 1em;
+}
+
 .nav-drawer {
   background: var(--color-light);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
