@@ -16,18 +16,18 @@
 .box {
   height: 100%;
   width: 100%;
-  border: 1px solid #171717;
+  border: 1px solid var(--color-dark);
   cursor: pointer;
 }
 
 @keyframes box-shadows {
   0% {
-    border: 1px solid #171717;
+    border: 1px solid var(--color-dark);
     box-shadow: none;
   }
   .01% {
     border: 1px solid var(--color-dark-secondary);
-    box-shadow: 0 0 30000px var(--color-dark-secondary);
+    box-shadow: 0 0 2000px var(--color-dark-secondary);
   }
 }
 
