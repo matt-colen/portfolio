@@ -74,6 +74,7 @@ export default function Nav() {
             <Link
               to="/"
               className={location.pathname === "/" ? "selected" : ""}
+              onClick={handleClick}
             >
               Home
             </Link>
@@ -82,6 +83,7 @@ export default function Nav() {
             <Link
               to="/about"
               className={location.pathname === "/about" ? "selected" : ""}
+              onClick={handleClick}
             >
               About
             </Link>
@@ -91,6 +93,7 @@ export default function Nav() {
               href="https://www.linkedin.com/in/matthew-colen-061650209/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClick}
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
@@ -100,6 +103,7 @@ export default function Nav() {
               href="https://github.com/matt-colen"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClick}
             >
               <i className="fa-brands fa-github"></i>
             </a>

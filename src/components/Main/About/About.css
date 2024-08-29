@@ -1,8 +1,8 @@
 .about-container {
-  padding: 5em 0;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 3em auto;
   gap: 2em;
+  border-radius: var(--radius);
 }
 
 .about-img-container {
@@ -26,9 +26,23 @@
   gap: 1em;
 }
 
+.tech-skills {
+  gap: 1em;
+  list-style: none;
+  padding-left: 0;
+  flex-flow: wrap;
+}
+
+.tech-skills > li {
+  flex-grow: 1;
+}
+
 @media (min-width: 700px) {
   .about-img-container {
     height: 350px;
     width: 350px;
+  }
+  .tech-skills > li {
+    flex-grow: unset;
   }
 }
