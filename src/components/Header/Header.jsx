@@ -1,14 +1,15 @@
+import { Link, useLocation } from "react-router-dom";
 import Nav from "./Nav/Nav.jsx";
 import Hero from "./Hero/Hero.jsx";
 import { nanoid } from "nanoid";
 import { useState, useEffect } from "react";
-
 import "./Header.css";
 
-export default function Header({ homePage }) {
+export default function Header() {
   const [width, setWidth] = useState(window.innerWidth);
   const [boxes, setBoxes] = useState(0);
   const [boxNumbers, setBoxNumbers] = useState([]);
+  const location = useLocation(); // Hook to get the current location
 
   // Sets state of Window width
   useEffect(() => {
@@ -52,9 +53,11 @@ export default function Header({ homePage }) {
 
   return (
     <header className="header outer-container">
-      <div className="header-background">{boxElements}</div>
-      <Nav homePage={homePage} />
-      <Hero />
+      {location.pathname === "/" && (
+        <div className="header-background">{boxElements}</div>
+      )}
+      <Nav />
+      {location.pathname === "/" && <Hero />} {/* Conditionally render Hero */}
     </header>
   );
 }

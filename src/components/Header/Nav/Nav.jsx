@@ -1,8 +1,10 @@
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import "./Nav.css";
 
-export default function Nav({ homePage }) {
+export default function Nav() {
   const [navDrawerOpen, setNavDrawerOpen] = useState(false);
+  const location = useLocation(); // Hook to get the current location
 
   const handleClick = () => {
     setNavDrawerOpen((prevNavDrawerOpen) => !prevNavDrawerOpen);
@@ -14,45 +16,53 @@ export default function Nav({ homePage }) {
 
   return (
     <nav className="nav">
-      {/* Desktop nav  */}
+      {/* Desktop nav */}
       <ul className="nav-list nav-list--desktop">
         <li>
-          <a href="index.html">Matt Colen</a>
+          <Link to="/">Matt Colen</Link>
         </li>
         <li>
-          <a href="index.html" className={homePage ? "selected" : undefined}>
+          <Link to="/" className={location.pathname === "/" ? "selected" : ""}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className={!homePage ? "selected" : undefined}>
+          <Link
+            to="/about"
+            className={location.pathname === "/about" ? "selected" : ""}
+          >
             About
-          </a>
+          </Link>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/matthew-colen-061650209/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/matt-colen" target="_blank">
+          <a
+            href="https://github.com/matt-colen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa-brands fa-github"></i>
           </a>
         </li>
       </ul>
-      {/* Mobile Nav  */}
+      {/* Mobile Nav */}
       <ul className="nav-list nav-list--mobile">
         <li>
-          <a href="index.html">Matt Colen</a>
+          <Link to="/">Matt Colen</Link>
         </li>
         <button className="btn btn-ham" onClick={handleClick}>
           <i className="fa-solid fa-bars hamburger-icon"></i>
         </button>
       </ul>
-      {/* Mobile Nav drawer  */}
+      {/* Mobile Nav drawer */}
       {navDrawerOpen && (
         <ul className="nav-list nav-drawer" style={navDrawerStyle}>
           <li className="close-btn">
@@ -61,25 +71,36 @@ export default function Nav({ homePage }) {
             </button>
           </li>
           <li>
-            <a href="index.html" className={homePage ? "selected" : undefined}>
+            <Link
+              to="/"
+              className={location.pathname === "/" ? "selected" : ""}
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className={!homePage ? "selected" : undefined}>
+            <Link
+              to="/about"
+              className={location.pathname === "/about" ? "selected" : ""}
+            >
               About
-            </a>
+            </Link>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/matthew-colen-061650209/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/matt-colen" target="_blank">
+            <a
+              href="https://github.com/matt-colen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
