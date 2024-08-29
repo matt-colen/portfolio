@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Nav.css";
 
-export default function Nav() {
+export default function Nav({ homePage }) {
   const [navDrawerOpen, setNavDrawerOpen] = useState(false);
 
   const handleClick = () => {
@@ -20,10 +20,14 @@ export default function Nav() {
           <a href="index.html">Matt Colen</a>
         </li>
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html" className={homePage ? "selected" : undefined}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#" className={!homePage ? "selected" : undefined}>
+            About
+          </a>
         </li>
         <li>
           <a
@@ -57,10 +61,14 @@ export default function Nav() {
             </button>
           </li>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" className={homePage ? "selected" : undefined}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#" className={!homePage ? "selected" : undefined}>
+              About
+            </a>
           </li>
           <li>
             <a

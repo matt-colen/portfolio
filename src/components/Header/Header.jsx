@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ homePage }) {
   const [width, setWidth] = useState(window.innerWidth);
   const [boxes, setBoxes] = useState(0);
   const [boxNumbers, setBoxNumbers] = useState([]);
@@ -53,7 +53,7 @@ export default function Header() {
   return (
     <header className="header outer-container">
       <div className="header-background">{boxElements}</div>
-      <Nav />
+      <Nav homePage={homePage} />
       <Hero />
     </header>
   );
