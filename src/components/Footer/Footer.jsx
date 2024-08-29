@@ -19,7 +19,8 @@ export default function Footer() {
         </li>
       </ul>
       <p className="copyright">
-        © {`${new Date().getFullYear()} `} Matt Colen. All Rights Reserved
+        <span>© {`${new Date().getFullYear()} `} Matt Colen.</span>
+        <span> All Rights Reserved</span>
       </p>
     </footer>
   );

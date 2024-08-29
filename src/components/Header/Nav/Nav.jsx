@@ -52,7 +52,7 @@ export default function Nav() {
       {navDrawerOpen && (
         <ul className="nav-list nav-drawer" style={navDrawerStyle}>
           <li className="close-btn">
-            <button className="btn" onClick={handleClick}>
+            <button className="btn btn-ham" onClick={handleClick}>
               <i className="fa-solid fa-xmark close-icon"></i>
             </button>
           </li>

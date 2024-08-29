@@ -16,7 +16,15 @@
   color: var(--color-light);
 }
 
+.footer a:hover {
+  color: var(--color-cta);
+}
+
 .copyright {
   font-size: 0.8rem;
   text-align: center;
+}
+
+.copyright > span {
+  margin-right: 0.5em;
 }

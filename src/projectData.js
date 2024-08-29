@@ -5,7 +5,7 @@ import thumbnail3 from "./assets/images/twimba.png";
 const projects = [
   {
     name: "Quiz Up",
-    description: "An app to test your skills on various topics",
+    description: "An app to test your knowledge on various topics",
     tags: ["React", "API"],
     thumbnail: thumbnail1,
     link: "https://quiz-up-mc.netlify.app/",
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     name: "Movie Watchlist",
-    description: "An app to search for movies and create a watchlist",
+    description: "An app to search for movies and build a watchlist",
     tags: ["JS", "API", "Netlify Serverless Functions"],
     thumbnail: thumbnail2,
     link: "https://movie-watchlist-mc.netlify.app",
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     name: "Twimba",
-    description: "A clone of the Twitter (X) app",
+    description: "An app that allows you to post, like, and retweet data",
     tags: ["JS", "Firebase Database", "Firebase Auth"],
     thumbnail: thumbnail3,
     link: "https://twimba-mc.netlify.app/",
