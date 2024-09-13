@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
+import mattColen from "../../assets/images/matt-colen.png";
+import techSkills from "../../data/techSkills.js";
 import "./About.css";
-import mattColen from "../../../assets/images/matt-colen.png";
-import techSkills from "../../../techSkills.js";
 
 export default function About() {
   const skillListItems = techSkills.map((skill) => {

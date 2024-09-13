@@ -4,12 +4,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h2 className="section-header">Contact</h2>
-      <form
-        className="form grid"
-        name="contact"
-        method="post"
-        
-      >
+      <form className="form grid" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>

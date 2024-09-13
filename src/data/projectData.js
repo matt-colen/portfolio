@@ -1,6 +1,6 @@
-import thumbnail1 from "./assets/images/quiz-up.png";
-import thumbnail2 from "./assets/images/movie-watchlist.png";
-import thumbnail3 from "./assets/images/twimba.png";
+import thumbnail1 from "../assets/images/quiz-up.png";
+import thumbnail2 from "../assets/images/movie-watchlist.png";
+import thumbnail3 from "../assets/images/twimba.png";
 
 const projects = [
   {

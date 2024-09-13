@@ -1,5 +1,6 @@
 const techSkills = [
   "React",
+  "React Router",
   "JavaScript",
   "CSS",
   "HTML",

@@ -1,5 +1,5 @@
-import "./Project.css";
 import { nanoid } from "nanoid";
+import "./Project.css";
 
 export default function Project({
   name,

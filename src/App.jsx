@@ -1,28 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header.jsx";
-import Main from "./components/Main/Main.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Layout from "./components/Layout/Layout.jsx";
+import About from "./components/About/About.jsx";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<Main />} /> {/* Home page */}
-        <Route
-          path="/about"
-          element={
-            <>
-              <Main showAbout />
-            </>
-          }
-        />{" "}
-        {/* About page */}
+        <Route path="/" element={<Layout />}>
+          <Route path="about" element={<About />} />
+        </Route>
       </Routes>
-      <Footer />
     </Router>
   );
 }
-
-export default App;
