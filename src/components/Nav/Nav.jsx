@@ -1,10 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import "./Nav.css";
 
 export default function Nav() {
   const [navDrawerOpen, setNavDrawerOpen] = useState(false);
-  const location = useLocation(); // Hook to get the current location
 
   const handleClick = () => {
     setNavDrawerOpen((prevNavDrawerOpen) => !prevNavDrawerOpen);
@@ -19,20 +18,22 @@ export default function Nav() {
       {/* Desktop nav */}
       <ul className="nav-list nav-list--desktop">
         <li>
-          <Link to="/">Matt Colen</Link>
+          <NavLink to="/" className={({ isActive }) => isActive && "selected"}>
+            Matt Colen
+          </NavLink>
         </li>
         <li>
-          <Link to="/" className={location.pathname === "/" ? "selected" : ""}>
+          <NavLink to="/" className={({ isActive }) => isActive && "selected"}>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/about"
-            className={location.pathname === "/about" ? "selected" : ""}
+            className={({ isActive }) => isActive && "selected"}
           >
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
           <a
@@ -56,7 +57,9 @@ export default function Nav() {
       {/* Mobile Nav */}
       <ul className="nav-list nav-list--mobile">
         <li>
-          <Link to="/">Matt Colen</Link>
+          <NavLink to="/" className={({ isActive }) => isActive && "selected"}>
+            Matt Colen
+          </NavLink>
         </li>
         <button className="btn btn-ham" onClick={handleClick}>
           <i className="fa-solid fa-bars hamburger-icon"></i>
@@ -71,22 +74,22 @@ export default function Nav() {
             </button>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/"
-              className={location.pathname === "/" ? "selected" : ""}
+              className={({ isActive }) => isActive && "selected"}
               onClick={handleClick}
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/about"
-              className={location.pathname === "/about" ? "selected" : ""}
+              className={({ isActive }) => isActive && "selected"}
               onClick={handleClick}
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
             <a

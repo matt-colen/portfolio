@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
+import "./HeroAnimation.css";
 
 export default function HeroAnimation() {
   const [width, setWidth] = useState(window.innerWidth);
