@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Nav.css";
 
@@ -20,11 +20,6 @@ export default function Nav() {
         <li>
           <NavLink to="/" className={({ isActive }) => isActive && "selected"}>
             Matt Colen
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/" className={({ isActive }) => isActive && "selected"}>
-            Home
           </NavLink>
         </li>
         <li>
@@ -72,15 +67,6 @@ export default function Nav() {
             <button className="btn btn-ham" onClick={handleClick}>
               <i className="fa-solid fa-xmark close-icon"></i>
             </button>
-          </li>
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => isActive && "selected"}
-              onClick={handleClick}
-            >
-              Home
-            </NavLink>
           </li>
           <li>
             <NavLink
