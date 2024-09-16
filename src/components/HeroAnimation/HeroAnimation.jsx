@@ -47,5 +47,9 @@ export default function HeroAnimation() {
     return <div key={nanoid()} style={style} className="box"></div>;
   });
 
-  return <div className="header-background">{boxElements}</div>;
+  return (
+    <div className="header-background" aria-hidden="true">
+      {boxElements}
+    </div>
+  );
 }
