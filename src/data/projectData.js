@@ -1,8 +1,16 @@
 import thumbnail1 from "../assets/images/quiz-up.png";
 import thumbnail2 from "../assets/images/movie-watchlist.png";
-import thumbnail3 from "../assets/images/twimba.png";
+import thumbnail3 from "../assets/images/sky-watch.png";
 
 const projects = [
+  {
+    name: "Sky Watch",
+    description: "An app to find the current weather for any destination",
+    tags: ["React", "API", "Netlify Serverless Functions"],
+    thumbnail: thumbnail3,
+    link: "https://sky-watch-mc.netlify.app/",
+    github: "https://github.com/matt-colen/sky-watch",
+  },
   {
     name: "Quiz Up",
     description: "An app to test your knowledge on various topics",
@@ -18,14 +26,6 @@ const projects = [
     thumbnail: thumbnail2,
     link: "https://movie-watchlist-mc.netlify.app",
     github: "https://github.com/matt-colen/movie-watchlist",
-  },
-  {
-    name: "Twimba",
-    description: "An app that allows you to post, like, and retweet data",
-    tags: ["JS", "Firebase Database", "Firebase Auth"],
-    thumbnail: thumbnail3,
-    link: "https://twimba-mc.netlify.app/",
-    github: "https://github.com/matt-colen/twimba",
   },
 ];
 
