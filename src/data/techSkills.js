@@ -1,7 +1,7 @@
 const techSkills = [
   "React",
   "React Router",
-  "JavaScript",
+  "JavaScript (ES6+)",
   "CSS",
   "HTML",
   "UX/UI Design",
