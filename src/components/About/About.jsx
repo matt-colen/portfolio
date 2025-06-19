@@ -28,15 +28,15 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          I'm a problem solver, animal lover, dedicated husband, guitar
-          collector, classic rock nerd, and world traveler. In general, I love
-          learning and trying to understand how things work. I currently work as
-          an Operational Excellence Specialist and have an MBA and a BA in
-          Psychology.
+          Hi, I currently work for the State of Missouri as an Operational
+          Excellence Manager where I have a strong track record of improving
+          processes, managing project timelines, leading cross-functional teams,
+          analyzing and visualizing complex data, and acting as a lead for
+          anything tech related.
         </p>
       </section>
       <section className="about-section grid">
-        <h2>Tech Skills</h2>
+        <h2>Skills</h2>
         <ul className="tech-skills flex">{skillListItems}</ul>
       </section>
     </section>

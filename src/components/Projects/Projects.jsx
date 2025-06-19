@@ -10,7 +10,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="projects grid">
-      <h2 className="section-header grid">Projects</h2>
+      <h2 className="section-header grid">Coding Projects</h2>
       <div className="projects-container grid">{projectElements}</div>
     </section>
   );

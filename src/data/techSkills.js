@@ -1,4 +1,12 @@
 const techSkills = [
+  "Salesforce Administration",
+  "Flow Builder",
+  "Process Improvement",
+  "Visio Flowcharting",
+  "Project Management",
+  "Asana",
+  "Dashboarding",
+  "Tableau",
   "React",
   "React Router",
   "JavaScript (ES6+)",
@@ -8,10 +16,6 @@ const techSkills = [
   "Figma",
   "Git",
   "GitHub",
-  "Command Line",
-  "Asana",
-  "Tableau",
-  "M365 suite",
 ];
 
 export default techSkills;

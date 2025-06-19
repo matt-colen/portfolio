@@ -45,6 +45,16 @@ export default function Nav() {
         </li>
         <li>
           <a
+            href="https://www.salesforce.com/trailblazer/matthewcolen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Matt Colen's Salesforce Trailblazer profile"
+          >
+            <i className="fa-brands fa-salesforce"></i>
+          </a>
+        </li>
+        <li>
+          <a
             href="https://github.com/matt-colen"
             target="_blank"
             rel="noopener noreferrer"
@@ -109,6 +119,17 @@ export default function Nav() {
               aria-label="Matt Colen's LinkedIn account"
             >
               <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.salesforce.com/trailblazer/matthewcolen"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleClick}
+              aria-label="Matt Colen's Salesforce Trailblazer profile"
+            >
+              <i className="fa-brands fa-salesforce"></i>
             </a>
           </li>
           <li>
