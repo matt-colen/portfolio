@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="hero flex">
       <h1 className="title">Matt Colen</h1>
       <p className="sub-title">
-        Salesforce Certified Admin | Operational Excellence Lead
+        Salesforce Admin & App Builder | Operational Excellence Lead
       </p>
     </section>
   );

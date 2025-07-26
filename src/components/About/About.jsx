@@ -28,11 +28,12 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          Hi, I currently work for the State of Missouri as an Operational
-          Excellence Manager where I have a strong track record of improving
-          processes, managing project timelines, leading cross-functional teams,
-          analyzing and visualizing complex data, and acting as a lead for
-          anything tech related.
+          Salesforce Certified Platform Administrator and Platform App Builder
+          with a strong track record of improving processes, managing project
+          timelines, leading cross-functional teams, analyzing and visualizing
+          complex data, and acting as a lead for anything tech related.
+          Passionate about using technology to simplify processes and improve
+          user experiences.
         </p>
       </section>
       <section className="about-section grid">

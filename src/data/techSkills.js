@@ -5,6 +5,7 @@ const techSkills = [
   "Visio Flowcharting",
   "Project Management",
   "Asana",
+  "Smartsheet",
   "Dashboarding",
   "Tableau",
   "React",
