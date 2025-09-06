@@ -35,6 +35,10 @@ export default function About() {
           Passionate about using technology to simplify processes and improve
           user experiences.
         </p>
+        <p>
+          Check out some of my web development projects below (including
+          building this site from scratch).
+        </p>
       </section>
       <section className="about-section grid">
         <h2>Skills</h2>
