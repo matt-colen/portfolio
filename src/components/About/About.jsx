@@ -28,12 +28,12 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          Salesforce Certified Platform Administrator and Platform App Builder
-          with a strong track record of improving processes, managing project
-          timelines, leading cross-functional teams, analyzing and visualizing
-          complex data, and acting as a lead for anything tech related.
-          Passionate about using technology to simplify processes and improve
-          user experiences.
+          Salesforce Certified Platform Administrator, Platform App Builder, and
+          Platform Administrator II (Advanced Admin) with a strong track record
+          of improving processes, managing project timelines, leading
+          cross-functional teams, analyzing and visualizing complex data, and
+          acting as a lead for anything tech related. Passionate about using
+          technology to simplify processes and improve user experiences.
         </p>
         <p>
           Check out some of my web development projects below (including
