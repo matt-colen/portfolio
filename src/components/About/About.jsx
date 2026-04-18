@@ -28,13 +28,13 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          Salesforce Certified Platform Administrator (ADM-201), Platform
-          Administrator II (ADM-301 - Advanced Admin), Platform App Builder
-          (ADM-202), and Business Analyst (BA-201) with a strong track record of
-          improving processes, managing project timelines, leading
-          cross-functional teams, analyzing and visualizing complex data, and
-          acting as a lead for anything tech related. Passionate about using
-          technology to simplify processes and improve user experiences.
+          Salesforce Program Administrator with 4x certifications and a
+          background in state government operations, process improvement, and
+          data governance. Experienced serving as the primary platform contact
+          for a Salesforce-based professional licensing system, guiding agile
+          delivery teams and translating business needs into scalable solutions
+          in remote and hybrid government environments. MBA with a strong
+          foundation in UX and web development.
         </p>
         <p>
           Check out some of my web development projects below (including
