@@ -28,12 +28,12 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          Salesforce Program Administrator with 4x certifications and a
-          background in state government operations, process improvement, and
-          data governance. Experienced serving as the primary platform contact
-          for a Salesforce-based professional licensing system, guiding agile
-          delivery teams and translating business needs into scalable solutions
-          in remote and hybrid government environments. MBA with a strong
+          Program Admin / Salesforce Business Systems Analyst with 5x
+          certifications and a background in state government operations,
+          process improvement, and data governance. Experienced serving as the
+          primary platform contact for a Salesforce-based professional licensing
+          system, guiding agile delivery teams and translating business needs
+          into scalable solutions in government environments. MBA with a strong
           foundation in UX and web development.
         </p>
         <p>
