@@ -28,13 +28,7 @@ export default function About() {
       <section className="about-section grid">
         <h2>About me</h2>
         <p>
-          Program Admin / Salesforce Business Systems Analyst with 5x
-          certifications and a background in state government operations,
-          process improvement, and data governance. Experienced serving as the
-          primary platform contact for a Salesforce-based professional licensing
-          system, guiding agile delivery teams and translating business needs
-          into scalable solutions in government environments. MBA with a strong
-          foundation in UX and web development.
+          Salesforce Business Systems Analyst at FCS Financial with 5x certifications and a background in state government operations, process improvement, and data governance. Experienced serving as a primary platform contact, guiding agile delivery teams, and translating complex business needs into scalable Salesforce solutions. MBA with a strong foundation in UX and system configuration.
         </p>
         <p>
           Check out some of my web development projects below (including
